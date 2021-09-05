@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+      }
+      div:hover {
+        background: yellow;
+        transition-property: background;
+        transition-duration: 4s, 2s;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+      }
+      .one {
+        background: seagreen;
+      }
+      .two {
+        background: rgb(48, 46, 139);
+      }
+      .three {
+        background: rgb(240, 39, 4);
+        transition-property: width, height;
+        transition-duration: 2s;
+      }
+      .four {
+        background: green;
+        transition: width;
+        transition-duration: 2s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+  </body>
+</html>
